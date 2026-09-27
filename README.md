@@ -77,7 +77,7 @@ The slides are grouped by act. Audit numbers carry the audit caption. Where a sl
 - **Reach, company-reported (R3):**
     - AI Overviews: 2.5 bn+ monthly users ([Google I/O, 19 May 2026](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/)).
     - ChatGPT: more than 1 bn weekly users ([OpenAI, Aug 2026](https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/)).
-- **Germany:** 37% of people aged 14+ use AI tools at least weekly ([ARD/ZDF-Medienstudie 2026](https://t3n.de/news/ard-zdf-medienstudie-2026-ki-nutzung-1765059/), ≈2,500 respondents, R2).
+- **Germany:** 37% of people aged 14+ use AI tools at least weekly ([ARD/ZDF-Medienstudie 2026](https://t3n.de/news/ard-zdf-medienstudie-2026-ki-nutzung-1765059/), 2,462 respondents, R2).
 - **What it doesn't show:**
     - AI Overviews' count is people shown a summary, not people who chose to use AI.
     - Surveys and traffic data describe different populations, so don't multiply them.
@@ -121,7 +121,7 @@ These outcomes are related, but they aren't a chain. When a dashboard says "AI v
 
 **German prompts don't guarantee German sources.**
 
-- Share of German-language sources in answers to German prompts: Google AI Overviews **89.8%**, Copilot **75.9%**, ChatGPT **66.0%**, Grok **49.3%**. [Temso, Lost in Translation](https://www.temso.ai/data/-Lost-in-Translation-How-AI-Models-Handle-Local-Language-Sources): 7.06 M citations, early 2026 (R4, a translation vendor, so treat it as directional).
+- Share of German-language sources in answers to German prompts: Google AI Overviews **89.8%**, Copilot **75.9%**, ChatGPT **66.0%**, Grok **49.3%**. [Temso, Lost in Translation](https://www.temso.ai/data/-Lost-in-Translation-How-AI-Models-Handle-Local-Language-Sources): 7.06 M citations, early 2026 (R4, a vendor study, so treat it as directional).
 
 **In my audit**, Vendor A's presence didn't change with the language of the question. The sources did:
 
@@ -211,8 +211,8 @@ The table measures .de domains, not the language of the page, so it's a differen
 
 - Brand mentions on the web correlate with AI visibility at **0.66**, backlinks at **0.22** ([Ahrefs, 75,000 brands](https://ahrefs.com/blog/ai-brand-visibility-correlations), R4).
 - In one study of consumer brands, the strongest predictor of being recommended was how much people search for the brand (β 1.06). Ad spend came out negative (−0.14) ([Malthouse et al.](https://arxiv.org/abs/2609.16304), 2,400 lists, 6 models, exploratory, R2). "Ad spend" there means general advertising, not ads inside AI answers.
-- Review volume explains **under 2%** of AI visibility ([G2 / Indig](https://learn.g2.com/do-more-g2-reviews-mean-more-ai-visibility), commissioned by G2, R4).
-- In mid-August 2026, ChatGPT's Reddit citations fell **73–97%** across three trackers ([Qwairy](https://www.qwairy.co/blog/chatgpt-reddit-citations-collapse-august-2026), Otterly, Petra Labs, R4). Platforms change what they read faster than you can change a content plan.
+- Review volume explains **under 2%** of AI visibility ([G2 / Indig](https://learn.g2.com/do-more-g2-reviews-mean-more-ai-visibility), published by G2, R4).
+- In mid-August 2026, ChatGPT's Reddit citations fell **73–97%** across three trackers ([Qwairy](https://www.qwairy.co/blog/chatgpt-reddit-citations-collapse-august-2026), Otterly, [Petra Labs via Inc.](https://www.inc.com/victoria-salves/chatgpt-suddenly-cut-reddit-citations-by-81-percent-new-report-found/91394126), R4). Platforms change what they read faster than you can change a content plan.
 - **What it doesn't show:** cause. Big brands have everything at once, so a common cause and reverse causation are both plausible. No one has published a controlled test of any off-site lever.
 
 **Test it like CRO, not like SEO.**
@@ -229,7 +229,7 @@ The table measures .de domains, not the language of the page, so it's a differen
 | Tool | Shows | Doesn't show |
 |---|---|---|
 | **GA4** | A built-in **AI Assistant** channel since 13 May 2026 ([Google](https://support.google.com/analytics/answer/9164320); not retroactive) | AI Overviews and AI Mode clicks, which arrive as google / organic; apps that send no referrer |
-| **Search Console** | Generative AI report: impressions only ([Google](https://support.google.com/webmasters/answer/16984139); still true on 24 Sep 2026). AI Overview and AI Mode clicks sit in the normal Performance report, mixed in with everything else ([Google](https://support.google.com/webmasters/answer/7042828)) | AI clicks and queries as their own numbers |
+| **Search Console** | Generative AI report: impressions only ([Google](https://support.google.com/webmasters/answer/16984139); still true on 24 Sep 2026). AI Overview and AI Mode clicks sit in the normal Performance report, mixed in with everything else ([Google](https://developers.google.com/search/docs/appearance/ai-features)) | AI clicks and queries as their own numbers |
 | **Bing Webmaster Tools** | AI Performance: citations and grounding queries, the only fan-out a platform shows you directly ([Microsoft](https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview)) | Other platforms |
 | **Server logs** | Model page reads (ChatGPT-User, OAI-SearchBot), which never reach GA4 | Whether a read became a citation or a buyer |
 | **"How did you hear about us?"** | What the buyer says, which no referrer can strip | Anything unprompted |
@@ -243,7 +243,7 @@ The table measures .de domains, not the language of the page, so it's a differen
 |---|---|---|
 | **Observed** | ~1% of visits arrive as AI referrals ([Conductor](https://www.conductor.com/academy/aeo-geo-benchmarks-report/), R4) | 2025 data |
 | **Declared** | 5.8 leads named an AI tool for every 1 the CRM attributed to AI ([Omniscient Digital](https://beomniscient.com/blog/first-touch-vs-self-reported-attribution-aeo/), 213 leads, R5) | One firm, which sells AEO |
-| **Assisted** | After a ChatGPT recommendation, 56% of visits came via search and 9% as AI referrals ([Similarweb](https://www.similarweb.com/corp/the-downstream-impact-of-ai-visibility/), R4). In another panel, visits ran at 1.5–2.5× baseline, and more than 97% carried no tag ([Profound](https://www.tryprofound.com/blog/the-ai-mention-effect), R4). | B2C, non-causal |
+| **Assisted** | After a ChatGPT recommendation, 56% of visits came via search and 9% as AI referrals ([Similarweb](https://www.similarweb.com/corp/the-downstream-impact-of-ai-visibility/), gated; [summary](https://ppc.land/your-analytics-are-lying-similarweb-traces-ai-recommendations-to-real-traffic/), R4). In another panel, visits ran at 1.5–2.5× baseline, and more than 97% carried no tag ([Profound](https://www.tryprofound.com/blog/the-ai-mention-effect), R4). | B2C, non-causal |
 | **Causal** | Nothing published | — |
 
 - **The only formula in circulation** for pricing AI visibility multiplies a 23× figure from a single website ([Ahrefs' own site](https://ahrefs.com/blog/ai-search-traffic-conversions-ahrefs/), R5) by a 4.4× figure whose method isn't disclosed ([Semrush's AI search study](https://www.semrush.com/blog/ai-search-seo-traffic-study/), R4, my employer's). Don't price a point of visibility with it.
@@ -254,7 +254,7 @@ The table measures .de domains, not the language of the page, so it's a differen
 | Score | Calculation | A tool that defines it this way |
 |---|---|---|
 | **50%** | 5 of all 10 answers | Peec, "Visibility" ([docs](https://docs.peec.ai/metrics/brand-metrics/visibility)) |
-| **83%** | 5 of the 6 answers that name any brand | Profound, "Visibility" ([glossary](https://help.tryprofound.com/articles/4288109168)) |
+| **83%** | 5 of the 6 answers that name any brand | Profound, "Visibility" ([help centre](https://help.tryprofound.com/articles/3443229936)) |
 | **25%** | 5 of all 20 brand mentions | Peec, "Share of Voice" ([docs](https://docs.peec.ai/metrics/brand-metrics/share-of-voice)) |
 
 The definitions come from each vendor's public help pages as they stood on 21 September 2026; definitions change, so check before quoting. All three scores are correct, because the dashboard answers a question someone chose for you.
@@ -470,11 +470,11 @@ Also available as [sources.csv](sources.csv).
 
 - [Pew Research Center, Google users are less likely to click on links when an AI summary appears (22 Jul 2025)](https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/) — 900 US adults · Mar 2025. *In the talk:* We see the edges.
 - [Xu, Iqbal, Montgomery (WashU), measuring Google AI Overviews, arXiv:2605.14021 (13 May 2026)](https://arxiv.org/html/2605.14021v1) — 55,393 queries · 98,020 claims · Mar–Apr 2026. *In the talk:* Be explicit.
-- [Schulte, Bleeker, Kaufmann (University of St. Gallen), visibility in AI search, arXiv:2604.07585 (10 Apr 2026)](https://arxiv.org/abs/2604.07585) — 4 engines · German-language prompts from Swiss servers · Jan–Mar 2026 + same-day repeats. *In the talk:* One number hides what moved.
+- [Schulte, Bleeker, Kaufmann (University of St. Gallen), visibility in AI search, arXiv:2604.07585 (Apr 2026)](https://arxiv.org/abs/2604.07585) — 4 engines · German-language prompts from Swiss servers · Jan–Mar 2026 + same-day repeats. *In the talk:* One number hides what moved.
 - [Amani et al. (MPI-SWS), donated conversations, arXiv:2609.19244 (16 Sep 2026)](https://arxiv.org/abs/2609.19244) — Real donated chats · ChatGPT, Claude, Grok, DeepSeek. *In the talk:* One question. Many queries..
 - [Malthouse, Lee, Yang, Pal, Feng, brand recommendations as retrieval and ranking, arXiv:2609.16304 (14 Sep 2026)](https://arxiv.org/abs/2609.16304) — 2,400 lists · 6 models · 5 consumer categories · exploratory. *In the talk:* Off-site mentions.
 - [Forrester, State of Business Buying 2026 (21 Jan 2026)](https://www.forrester.com/blogs/state-of-business-buying-2026) — ~18,000 buyers worldwide. *In the talk:* The buyer sees AI.
-- [ARD/ZDF-Medienstudie 2026 (22 Sep 2026), via t3n](https://t3n.de/news/ard-zdf-medienstudie-2026-ki-nutzung-1765059/) — ≈2,500 people in Germany aged 14+ · Jan–Apr 2026. *In the talk:* The buyer sees AI.
+- [ARD/ZDF-Medienstudie 2026 (22 Sep 2026), via t3n](https://t3n.de/news/ard-zdf-medienstudie-2026-ki-nutzung-1765059/) — 2,462 people in Germany aged 14+ · Jan–Apr 2026. *In the talk:* The buyer sees AI.
 
 **R3 · Platform documentation** (8)
 
@@ -490,22 +490,22 @@ Also available as [sources.csv](sources.csv).
 **R4 · Vendor study** (23)
 
 - [Conductor, 2026 AEO/GEO Benchmarks (Nov 2025)](https://www.conductor.com/academy/aeo-geo-benchmarks-report/) — 13,770 domains · 3.3 bn sessions · May–Sep 2025. *In the talk:* The buyer sees AI · Who gets the credit?.
-- [Similarweb, the downstream impact of AI visibility (Jun 2026)](https://www.similarweb.com/corp/the-downstream-impact-of-ai-visibility/) — 6 consumer brands · ChatGPT · US desktop · Jul–Dec 2025. *In the talk:* Who gets the credit?.
+- [Similarweb, the downstream impact of AI visibility (Jun 2026)](https://www.similarweb.com/corp/the-downstream-impact-of-ai-visibility/) — 6 consumer brands · ChatGPT · US desktop · Jul–Dec 2025 · full report gated. *In the talk:* Who gets the credit?.
 - [Żatuchin, variance decomposition of AI answers, arXiv:2607.13304 (14 Jul 2026)](https://arxiv.org/html/2607.13304) — 12,933 multilingual responses · 3 models · author works for a vendor. *In the talk:* Most tools don’t publish how they count.
-- [Petra Labs, how accurate are AI visibility tools (26 Feb 2026)](https://www.petralabs.com/intelligence/how-accurate-are-ai-visibility-tools) — 900 trials · ChatGPT signed in, signed out and API. *In the talk:* Most tools don’t publish how they count.
+- [Petra Labs, how accurate are AI visibility tools (2026)](https://www.petralabs.com/intelligence/how-accurate-are-ai-visibility-tools) — 900 trials · ChatGPT signed in, signed out and API. *In the talk:* Most tools don’t publish how they count.
 - [Ahrefs (Linehan, Guan), 75,000-brand correlations with AI visibility (2025–2026)](https://ahrefs.com/blog/ai-brand-visibility-correlations) — 75,000 brands · Google AI Overviews · correlational. *In the talk:* Verdict (E) · Off-site mentions.
 - [Discovered Labs, what drives AI citations (Aug 2026)](https://discoveredlabs.com/research/what-drives-ai-citations) — 2 M citations · 10,000 pages · 4 engines · agency dataset. *In the talk:* Be explicit.
-- [G2 / Kevin Indig, do more G2 reviews mean more AI visibility? (23 Oct 2025)](https://learn.g2.com/do-more-g2-reviews-mean-more-ai-visibility) — 30,000 citations · 500 categories · commissioned by G2. *In the talk:* Off-site mentions.
+- [G2 / Kevin Indig, do more G2 reviews mean more AI visibility? (23 Oct 2025)](https://learn.g2.com/do-more-g2-reviews-mean-more-ai-visibility) — 30,000 citations · 500 categories · published by G2. *In the talk:* Off-site mentions.
 - [DerivateX, ChatGPT cites recommended SaaS tools’ own sites (1 Jun 2026), press release](https://natlawreview.com/press-releases/study-chatgpt-cites-recommended-saas-tools-own-site-just-12-time) — 40 B2B SaaS categories × 10 runs · ChatGPT. *In the talk:* Your site is one voice.
 - [Seer Interactive, content recency and AI visibility (24 Jul 2026)](https://www.seerinteractive.com/insights/study-content-recencys-impact-on-ai-visibility-in-2026) — 7,683 cited pages · 47,097 citations · Mar–Jun 2026 · cited pages only. *In the talk:* Be explicit.
 - [Seer Interactive, Gemini 3 query fan-outs (21 Nov 2025)](https://www.seerinteractive.com/insights/gemini-3-query-fan-outs-research) — 501 prompts · Gemini 3 API. *In the talk:* One question. Many queries..
-- [Kevin Indig (Growth Memo), how AI pays attention (16 Feb 2026)](https://www.growth-memo.com/p/the-science-of-how-ai-pays-attention) — 18,012 ChatGPT citations. *In the talk:* Be retrievable.
-- [Temso, Lost in Translation: how AI models handle local-language sources (early 2026)](https://www.temso.ai/data/-Lost-in-Translation-How-AI-Models-Handle-Local-Language-Sources) — 7,058,891 citations · 6 languages · 4 models · translation vendor. *In the talk:* German prompts.
+- [Kevin Indig (Growth Memo), how AI pays attention (16 Feb 2026)](https://www.growth-memo.com/p/the-science-of-how-ai-pays-attention) — 18,012 ChatGPT citations · detail behind a paywall. *In the talk:* Be retrievable.
+- [Temso, Lost in Translation: how AI models handle local-language sources (early 2026)](https://www.temso.ai/data/-Lost-in-Translation-How-AI-Models-Handle-Local-Language-Sources) — 7,058,891 citations · 6 languages · 4 models · vendor study. *In the talk:* German prompts.
 - [Ahrefs llms.txt server logs, via PPC Land (2 Jul 2026)](https://ppc.land/llms-txt-adoption-rises-8-8x-but-97-of-files-get-zero-ai-requests/) — 137,000 domains · May 2026. *In the talk:* Verdict (C).
-- [Averi / Writesonic, brand-site citations across ChatGPT model versions (Jun 2026)](https://www.averi.ai/blog/gpt-5.5-cites-brand-sites-10pp-less-than-gpt-5.4) — 50 prompts × 3 models · small vendor sample. *In the talk:* Most tools don’t publish how they count.
+- [Averi / Writesonic, brand-site citations across ChatGPT model versions (May 2026)](https://www.averi.ai/blog/gpt-5.5-cites-brand-sites-10pp-less-than-gpt-5.4) — 50 prompts × 3 models · small vendor sample. *In the talk:* Most tools don’t publish how they count.
 - [6sense, 2025 B2B Buyer Experience Report (Nov 2025)](https://6sense.com/science-of-b2b/buyer-experience-report-2025/) — ~4,000 buyers · 40% in Europe. *In the talk:* The buyer sees AI.
 - [Tannenbaum (Aiso), own-domain retrieval and brand mentions, arXiv:2609.23162 (19 Sep 2026)](https://arxiv.org/abs/2609.23162) — 34,960 observations · 75 projects · GPT and Gemini · observational · vendor author. *In the talk:* Be retrievable.
-- [Qwairy, Otterly and Petra Labs: ChatGPT’s Reddit citations in August 2026](https://www.qwairy.co/blog/chatgpt-reddit-citations-collapse-august-2026) — Three vendor trackers · mid-August 2026. *In the talk:* Off-site mentions.
+- [Qwairy, Otterly and Petra Labs: ChatGPT’s Reddit citations in August 2026](https://www.qwairy.co/blog/chatgpt-reddit-citations-collapse-august-2026) — Three vendor trackers · mid-August 2026 · link is Qwairy’s; Petra Labs via Inc., Otterly via its own report. *In the talk:* Off-site mentions.
 - [Profound, The AI mention effect (1 Jul 2026)](https://www.tryprofound.com/blog/the-ai-mention-effect) — US panel · Jan–Jun 2026. *In the talk:* What you can see today · Who gets the credit?.
 - [RESONEO, inside ChatGPT retrieval (Jul, updated Aug 2026)](https://think.resoneo.com/chatgpt-retrieval/) — 1,249 answers · 88,000 results · 26,900 pages · ChatGPT. *In the talk:* Title and a passage.
 - [DEJAN, how big are Google’s grounding chunks? (Dec 2025)](https://dejan.ai/blog/how-big-are-googles-grounding-chunks/) — 7,060 queries · Gemini grounding API. *In the talk:* Title and a passage.

@@ -35,7 +35,7 @@ Every number gets a rung, and the rung says how much weight it can carry.
 
 Experiments count as R1 or LAB by design, whoever ran them. Case studies count as R5. Other studies by tool vendors or agencies count as R4, including Semrush's.
 
-![152 sources in, 51 on stage, by rung](assets/sources-by-rung.png)
+![152 sources in, 51 on stage, by rung](slide5a-simple-51.png)
 
 | Rung | Reviewed | In the approved-claims pack | Cited in the talk |
 |---|---|---|---|

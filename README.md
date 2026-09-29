@@ -5,7 +5,7 @@ Companion to the talk by Anton Andrusenko at SaaS Marketers Connect, DeepL, Berl
 
 **Download:** [Full pack (PDF)](The-Invisible-Funnel-evidence-pack.pdf) · [Six-questions checklist (PDF, 2 pages)](Six-questions-checklist.pdf) · [All sources (CSV)](sources.csv)
 
-Every number from the talk is here, with where it came from, how strong it is and what it doesn't show. The research cut-off was 21 September 2026, and the figures were checked against their sources by 23 September. Changes after the cut-off were checked on 25 September (section 5). I didn't author the studies cited: I collected them, checked them against their sources and graded them. The one exception is a small audit I ran myself, clearly marked as mine.
+Every number from the talk is here, with where it came from, how strong it is and what it doesn't show. The research cut-off was 21 September 2026, and the figures were checked against their sources by 23 September. Changes after the cut-off were checked on 25 September (section 5). This version was updated on 29 September 2026 to match the final talk; the changes are listed in section 8. I didn't author the studies cited: I collected them, checked them against their sources and graded them. The one exception is a small audit I ran myself, clearly marked as mine.
 
 **Contents**
 
@@ -59,9 +59,9 @@ The slides are grouped by act. Audit numbers carry the audit caption. Where a sl
 
 ### Prologue
 
-**The evaluation journey starts inside AI.** Sarah is a composite: an HR lead choosing an HR system for a 150-person company in Germany. Her questions are real; they are the ones used in my audit (section 3).
+**Sarah's evaluation starts inside AI.** Sarah is a composite: an HR lead choosing an HR system for a 150-person company in Germany. Her questions are the ones I asked AI in my audit (section 3).
 
-**She never clicked.** In a last-click model, Sarah's purchase is recorded as google / organic, a branded search. The place where the decision formed doesn't show up in the report.
+**She never clicked the AI answer.** She typed the brand into Google instead. In a last-click model, Sarah's purchase is recorded as google / organic, a branded search. The place where the decision formed doesn't show up in the report.
 
 **Every number tonight has a rung.** See section 1.
 
@@ -75,7 +75,7 @@ The slides are grouped by act. Audit numbers carry the audit caption. Where a sl
 - *Hypothesis:* buyers use AI mainly to compare and narrow a list, not to discover vendors. In the 6sense survey, 85% already knew the vendors they evaluated.
 - **~1%** of website visits arrive from AI assistants. [Conductor 2026 benchmarks](https://www.conductor.com/academy/aeo-geo-benchmarks-report/): 13,770 domains, 3.3 bn sessions, May–Sep 2025 (R4). This is 2025 data, and AI referrals are growing fast from a small base.
 - **Reach, company-reported (R3):**
-    - AI Overviews: 2.5 bn+ monthly users ([Google I/O, 19 May 2026](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/)).
+    - AI Overviews: shown to 2.5 bn+ monthly users ([Google I/O, 19 May 2026](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/)).
     - ChatGPT: more than 1 bn weekly users ([OpenAI, Aug 2026](https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/)).
 - **Germany:** 37% of people aged 14+ use AI tools at least weekly ([ARD/ZDF-Medienstudie 2026](https://t3n.de/news/ard-zdf-medienstudie-2026-ki-nutzung-1765059/), 2,462 respondents, R2).
 - **What it doesn't show:**
@@ -83,26 +83,27 @@ The slides are grouped by act. Audit numbers carry the audit caption. Where a sl
     - Surveys and traffic data describe different populations, so don't multiply them.
     - Weekly and monthly user counts are different units, so never add them up.
 
-**We see the edges, not the middle.**
+**We see the result, not the decision.** We don't see the buyer's question: ChatGPT shares no prompts, and Search Console's AI report shows impressions, not queries ([Google](https://support.google.com/webmasters/answer/16984139)). We see the end: a visit, a lead, a deal. The middle happens inside the answer. On Google, experiments show that AI answers cost clicks:
 
 - **−39.8%** outbound organic clicks when an AI Overview appeared. [Agarwal & Sen](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6513059): randomised field experiment, N = 1,065, US, Google, Jan–Feb 2026 (R1, not yet peer reviewed). The effect is conditional: it applies only when an AI Overview appears.
 - **8% vs 15%**: share of Google searches that led to a click on a traditional result, with and without an AI summary ([Pew Research Center](https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/), 900 US adults, Mar 2025, R2).
-- **−18.8 percentage points** click-through under an AI-Mode-only experience ([Wang et al.](https://arxiv.org/abs/2608.18352), preregistered, N = 1,100, R1).
+- **−18.8 percentage points** click-through under an AI-Mode-only experience ([Wang et al.](https://arxiv.org/abs/2608.18352), preregistered, N = 1,100, US, March 2026, R1).
 - **What it doesn't show:**
     - Any effect on ChatGPT or Perplexity: no experiment covers them.
     - An "all searches" figure: none of these studies publishes one.
     - One number measured several times: these are different treatments with different results.
 
-**Four meanings hide inside "visibility".**
+**Five meanings hide inside "visibility".**
 
 | Meaning | What happened |
 |---|---|
 | **Found** | Your page entered the set of candidates. |
-| **Cited** | The answer links to the source. |
+| **Cited** | The answer links to your page as a source. |
+| **Mentioned** | The answer names your brand, with or without a link. |
 | **Recommended** | The answer endorses your product. |
 | **Chosen** | The buyer picks it. |
 
-These outcomes are related, but they aren't a chain. When a dashboard says "AI visibility", ask which of the four it means.
+The first two are about your pages; the last three are about your brand. They're related, but they aren't a chain: your page can be cited for a fact without your brand being named, and your brand can be named without a link. Most visibility dashboards count mentions. When a dashboard says "AI visibility", ask which of the five it means.
 
 ### Act 2 · How AI picks
 
@@ -110,7 +111,6 @@ These outcomes are related, but they aren't a chain. When a dashboard says "AI v
 
 - Google documents that AI Mode may use "query fan-out": issuing several related searches for one question ([Google Search Central](https://developers.google.com/search/docs/appearance/ai-features), R3).
 - **10.7** sub-queries per prompt, and **95%** of them had zero measured search volume. [Seer Interactive](https://www.seerinteractive.com/insights/gemini-3-query-fan-outs-research) read the grounding metadata of the Gemini 3 API: 501 prompts, Nov 2025 (R4). That is one API at one point in time.
-- Not every system searches every time. In donated real conversations, ChatGPT used web search for 14% of prompts ([Amani et al., Sep 2026](https://arxiv.org/abs/2609.19244), R2).
 - **Takeaway:** answer the detailed questions, not only the head terms.
 
 **Your site is one voice in the answer.**
@@ -136,24 +136,36 @@ The table measures .de domains, not the language of the page, so it's a differen
 
 **Takeaway:** keep separate German and English baselines, and don't average them.
 
+**Many results. A few passages. One answer.** It isn't one model thinking: it's a pipeline, and each vendor runs it differently. What the platforms' documentation and outside captures show:
+
+1. **Decide.** The system decides whether to search at all. "Claude determines when to search based on the prompt" ([Anthropic web search docs](https://platform.claude.com/docs/en/agents-and-tools/tool-use/web-search-tool), R3). In donated real conversations, ChatGPT used web search for 14% of prompts ([Amani et al., Sep 2026](https://arxiv.org/abs/2609.19244), R2).
+2. **Search.** One query or many, and the process "can repeat multiple times throughout a single request" (Anthropic, R3; Google's query fan-out above).
+3. **Shortlist.** In one capture of ChatGPT, 12.4% of the listed results were attached to the answer and 8.2% became the lead citation ([RESONEO](https://think.resoneo.com/chatgpt-retrieval/), Jul–Aug 2026, R4).
+4. **Read.** Mostly a title and a passage of about 200 characters, not the page (RESONEO, R4; see "a title and a passage" in Act 4).
+5. **Cite.** Each citation points to a short span of text; in Claude's API the cited text is up to 150 characters (Anthropic, R3).
+
+- **What wins the pick:** "topical relevance and context position are the most robust factors" across 45 GEO studies ([Martinez, 2026](https://arxiv.org/html/2607.14035v1), preprint, LAB).
+- **What it doesn't show:** any platform's actual ranking logic. None has been published.
+- **Further reading, not among the 51 cited in the talk:** models judging conflicting evidence "rely heavily on the relevance of a website to the query, while largely ignoring" scientific references or a neutral tone ([Wan, Wallace & Klein, ACL 2024](https://arxiv.org/abs/2402.11782), LAB). ChatGPT, Perplexity and Gemini lean heavily on third-party "earned" sources compared with Google ([Chen et al., 2025](https://arxiv.org/abs/2509.08919), R2). In my audit, ChatGPT still cited competitors' own sites often, so check your own category.
+
 ### Act 3 · What holds up?
 
 **The bet:** which move has the strongest experimental support? A, statistics and quotes · B, schema · C, llms.txt · D, titles and structure · E, third-party mentions.
 
 **The famous +40% was measured after the page was found.**
-[Aggarwal et al., KDD 2024](https://arxiv.org/abs/2311.09735) (LAB). The researchers took five pages that search had already found, rewrote one of them, and gave all five to GPT-3.5. They then measured the rewritten page's share of the words in the answer, adjusted for position. That share went from 19.3 to 27.2, which is +40%. Whether search would find the rewritten page was never tested. The result is real inside its frame.
+[Aggarwal et al., KDD 2024](https://arxiv.org/abs/2311.09735) (LAB). The researchers took five pages that search had already found, rewrote one of them, and gave all five to GPT-3.5. They then measured the rewritten page's share of the words in the answer, adjusted for position. That share went from 19.3 to 27.2, which is +40%, mostly from one method: adding quotations. Whether search would find the rewritten page was never tested. The paper's check on Perplexity didn't test it either: the researchers uploaded the page texts as files and had it answer only from those. The result is real inside its frame. Headlines often retell it as "tactics that boost AI citations by 40%"; that isn't what was measured.
 
-**Strongest support? D, narrowly, and at one stage.**
+**Strongest support? D, narrowly, and only in the lab.** Three kinds of evidence: a lab test shows cause but not on a real platform; a live test is real but rare; a correlation is real data but can't show cause.
 
-| Move | Best evidence | Result |
-|---|---|---|
-| **A** · Statistics & quotes | [C-SEO Bench](https://arxiv.org/abs/2506.11097), NeurIPS 2025 (LAB): 1,915 queries, 4 models | The +40% came from the GEO simulator (above). In this benchmark, across all methods tested, 3 significant wins in 54; adding statistics lowered rankings in 19 of 24 settings |
-| **B** · Schema | [Ahrefs matched test](https://ahrefs.com/blog/schema-ai-citations/) (R1 by design): 1,885 pages, each against 3 controls | No citation uplift on any platform (−4.6% on AI Overviews). Keep schema for rich results. |
-| **C** · llms.txt | [Ahrefs server logs](https://ppc.land/llms-txt-adoption-rises-8-8x-but-97-of-files-get-zero-ai-requests/) (R4): 137,000 domains, May 2026 | 97% of files got no requests in a month; AI-search retrieval bots made 1.1% of requests. [Google](https://developers.google.com/search/docs/appearance/ai-features) says you don't need AI text files like llms.txt to appear in Search, AI features included; that statement is about Google only. |
-| **D** · Titles & structure | [SAGEO Arena](https://arxiv.org/abs/2602.12187), KDD 2026 (LAB) | +22% at retrieval, −17% at reranking, +2% at citation: positive at one stage only |
-| **E** · Third-party mentions | [Ahrefs, 75,000 brands](https://ahrefs.com/blog/ai-brand-visibility-correlations) (R4) | Brand mentions correlate with AI visibility 3× more than backlinks (0.66 vs 0.22). Correlation, no experiment. |
+| Move | Kind of test | Best evidence | Result |
+|---|---|---|---|
+| **A** · Statistics & quotes | Lab: won, then reversed | [C-SEO Bench](https://arxiv.org/abs/2506.11097), NeurIPS 2025 (LAB): 1,915 queries, 4 models | The +40% came from the GEO simulator (above). In this benchmark, across all methods tested, 3 significant wins in 54; adding statistics lowered rankings in 19 of 24 settings |
+| **B** · Schema | **The only live test at scale:** no uplift | [Ahrefs matched test](https://ahrefs.com/blog/schema-ai-citations/) (R1 by design): 1,885 pages, each against 3 controls | No citation uplift on any platform (−4.6% on AI Overviews). Keep schema for rich results. |
+| **C** · llms.txt | No test: server logs | [Ahrefs server logs](https://ppc.land/llms-txt-adoption-rises-8-8x-but-97-of-files-get-zero-ai-requests/) (R4): 137,000 domains, May 2026 | 97% of files got no requests in a month; AI-search retrieval bots made 1.1% of requests. [Google](https://developers.google.com/search/docs/appearance/ai-features) says you don't need AI text files like llms.txt to appear in Search, AI features included; that statement is about Google only. |
+| **D** · Titles & structure | Lab: one stage | [SAGEO Arena](https://arxiv.org/abs/2602.12187), KDD 2026 (LAB) | +22% at retrieval, −17% at reranking, +2% at citation: most of the gain is gone by citation. Nothing has contradicted it yet, which is why D wins, narrowly |
+| **E** · Third-party mentions | No test: correlation | [Ahrefs, 75,000 brands](https://ahrefs.com/blog/ai-brand-visibility-correlations) (R4) | Brand mentions track AI visibility much more closely than backlinks (0.66 vs 0.22). Big brands have everything at once, so it could be brand size. Correlation, no experiment. |
 
-**Bottom line:** no tactic is proven across sites and platforms. The live field tests of content changes so far are single sites or one vendor's matched sample. So invest in the fundamentals, and test your own changes.
+**Bottom line:** of the five, only schema was tested on live pages at scale, and it found nothing. No tactic is proven across sites and platforms. The live field tests of content changes so far are single sites or one vendor's matched sample. So invest in the fundamentals, and test your own changes.
 
 ### Act 4 · What actually works
 
@@ -164,10 +176,10 @@ The table measures .de domains, not the language of the page, so it's a differen
 - **Access.** Let the search bots in. [OpenAI](https://developers.openai.com/api/docs/bots): sites opted out of OAI-SearchBot aren't shown in ChatGPT search answers. Anthropic documents Claude-SearchBot ([Anthropic](https://support.claude.com/en/articles/8896518)). Blocking training bots doesn't remove you from answers; blocking search bots does.
 - **Rendering.** ChatGPT's and Claude's live fetchers don't run JavaScript ([RESONEO test](https://think.resoneo.com/sentinel/geo-llm-crawler-report.html), R5; Anthropic docs, R3). Google's index does ([Google Search Central](https://developers.google.com/search/docs/appearance/ai-features), R3). Keep key content in the HTML.
 - **Answer first.** 44% of ChatGPT citations came from the first 30% of a page's text ([Indig](https://www.growth-memo.com/p/the-science-of-how-ai-pays-attention), 18,012 citations, R4).
-- In one vendor dataset, when search found the brand's own site, the brand was named **40–49 points** more often. When it didn't, the brand was named in **3–4%** of answers ([Tannenbaum, arXiv:2609.23162](https://arxiv.org/abs/2609.23162), 34,960 observations, R4). This is observational: correlation, not cause.
+- In one vendor dataset, when search found the brand's own site, the brand was named **40–49 points** more often. When it didn't, the brand was named in **under 4%** of answers: 2.8% for GPT, 3.8% for Gemini ([Tannenbaum, arXiv:2609.23162](https://arxiv.org/abs/2609.23162), 34,960 observations, R4). This is observational: correlation, not cause.
 - **What it doesn't show:** that being retrievable gets you recommended. It opens the door, nothing more.
 
-**In most AI answers, your page is a title and a passage.** This describes default answers.
+**In default ChatGPT answers, your page is a title and a passage.**
 
 - **ChatGPT.** [RESONEO's capture of ChatGPT](https://think.resoneo.com/chatgpt-retrieval/) (1,249 answers, Jul–Aug 2026, R4):
     - ChatGPT saw about **200 characters** per result, usually starting at the H1.
@@ -178,7 +190,7 @@ The table measures .de domains, not the language of the page, so it's a differen
 - **Reasoning modes.** OpenAI's docs say reasoning models can open pages (R3), so in Thinking, Deep Research or agent modes more pages get read in full. There, the whole page has to be readable.
 - **Limits:** each capture covers one product in one mode, measured before GPT-6. **Takeaway:** write the title and first two lines as the answer.
 
-**Be explicit, or AI borrows someone else's numbers.**
+**Be explicit: where the page was silent, AI borrowed someone else's numbers.**
 
 - **In my audit:**
     - Where Vendor A's pages are explicit (the DATEV integration), no answer got it wrong.
@@ -194,7 +206,7 @@ The table measures .de domains, not the language of the page, so it's a differen
     - 75% of cited pages had been updated within the past year ([Seer Interactive](https://www.seerinteractive.com/insights/study-content-recencys-impact-on-ai-visibility-in-2026), R4). The study looked only at cited pages, so updating is a lever to test, not a proven cause.
 - **What it doesn't show:** that publishing your prices makes AI quote them. That is a test to run.
 
-**Be present where the machine reads.** In my audit, the two platforms read different webs:
+**Be present where the machine reads.** In my audit, the two platforms cited different webs:
 
 | | ChatGPT (36 answers) | Google AI Mode (26 answers) |
 |---|---|---|
@@ -228,14 +240,14 @@ The table measures .de domains, not the language of the page, so it's a differen
 
 | Tool | Shows | Doesn't show |
 |---|---|---|
-| **GA4** | A built-in **AI Assistant** channel since 13 May 2026 ([Google](https://support.google.com/analytics/answer/9164320); not retroactive) | AI Overviews and AI Mode clicks, which arrive as google / organic; apps that send no referrer |
+| **GA4** | A built-in **AI Assistant** channel since 13 May 2026 ([Google](https://support.google.com/analytics/answer/9164320); not retroactive). Links from ChatGPT search carry `utm_source=chatgpt.com` ([OpenAI](https://help.openai.com/en/articles/12627856-publishers-and-developers-faq)) | AI Overviews and AI Mode clicks, which arrive as google / organic; apps that send no referrer |
 | **Search Console** | Generative AI report: impressions only ([Google](https://support.google.com/webmasters/answer/16984139); still true on 24 Sep 2026). AI Overview and AI Mode clicks sit in the normal Performance report, mixed in with everything else ([Google](https://developers.google.com/search/docs/appearance/ai-features)) | AI clicks and queries as their own numbers |
 | **Bing Webmaster Tools** | AI Performance: citations and grounding queries, the only fan-out a platform shows you directly ([Microsoft](https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview)) | Other platforms |
 | **Server logs** | Model page reads (ChatGPT-User, OAI-SearchBot), which never reach GA4 | Whether a read became a citation or a buyer |
 | **"How did you hear about us?"** | What the buyer says, which no referrer can strip | Anything unprompted |
 
 - **A do-it-yourself check.** Filter Search Console queries with `(?i)(site:.*official|official.*site:)`. Thousands of impressions with almost no clicks can be a fingerprint of machine searches, though whose machine is unproven ([Lily Ray](https://lilyraynyc.substack.com/p/what-we-can-learn-from-evolving-chatgpt), R5).
-- **Missing UTM tags.** In one vendor panel, more than **97%** of visits after an AI mention carried no UTM tag ([Profound](https://www.tryprofound.com/blog/the-ai-mention-effect), US, Jan–Jun 2026, R4).
+- **Missing UTM tags.** In one vendor panel, more than **97%** of visits after an AI mention carried no UTM tag ([Profound](https://www.tryprofound.com/blog/the-ai-mention-effect), US, Jan–Jun 2026, R4). A tag only travels with a click.
 
 **Who gets the credit?** Credit falls into four categories, from most to least visible:
 
@@ -259,7 +271,7 @@ The table measures .de domains, not the language of the page, so it's a differen
 
 The definitions come from each vendor's public help pages as they stood on 21 September 2026; definitions change, so check before quoting. All three scores are correct, because the dashboard answers a question someone chose for you.
 
-**Most tools don't publish how they count: 7 · 2 · 0.**
+**Most tools don't publish their formula: 7 · 2 · 0.**
 
 - **The counts.** My review of 20 AI-visibility products' public documentation (21 Sep 2026) found:
     - **7** publish an explicit formula for their headline metric, and 11 state its numerator and denominator.
@@ -353,7 +365,7 @@ Ask them of a vendor's number, an agency's, your own team's, and mine.
 
 ### Definitions
 
-- **Found · Cited · Recommended · Chosen:** four different outcomes (section 2, Act 1).
+- **Found · Cited · Mentioned · Recommended · Chosen:** five different outcomes (section 2, Act 1). Found and cited are about your pages; mentioned, recommended and chosen are about your brand.
 - **Presence:** answers naming you ÷ all eligible answers, with an interval.
 - **Share of mentions:** your mentions ÷ all brand mentions.
 - **Prominence:** first / top three / later, reported as a distribution.
@@ -393,7 +405,7 @@ Extra runs per question buy little: extra questions buy more.
 
 ### Five free fixes for Monday
 
-1. **Check GA4's AI Assistant channel.** It has been built in since May 2026. Check which AI sources it catches, and add "an AI assistant" as an answer option to "How did you hear about us?".
+1. **Check GA4's AI Assistant channel.** It has been built in since May 2026. Check which AI sources it catches, filter for `utm_source=chatgpt.com` (OpenAI adds it to links from ChatGPT search), and add "an AI assistant" as an answer option to "How did you hear about us?".
 2. **Check bot access, CDN settings and rendering.**
     - Let OAI-SearchBot, Claude-SearchBot, PerplexityBot, Googlebot and Bingbot in.
     - If you use Cloudflare, choose "Disallow AI Training", not "Block" (section 5).
@@ -446,6 +458,7 @@ None of these changes a number in the talk. Most platform figures in it were mea
 - **"X billion AI users."** Company counts in different units can't be added up.
 - **"ChatGPT just uses Bing" (or Google).** It runs its own index and also mixes in scraped results; nobody has published the mix.
 - **"Write listicles."** Page-type rankings shift when models update.
+- **"GEO tactics boost AI citations by 40%."** The +40% was a share of words in a lab, for pages already found.
 - **"Sitemaps do nothing."** The test concerned crawl discovery on one domain.
 - **"Run every question 8–15 times."** Size the panel from your own pilot.
 - **"The invisible funnel becomes branded search and direct, six to one."** That's a hypothesis from B2C panels.
@@ -460,18 +473,18 @@ Also available as [sources.csv](sources.csv).
 
 **R1 · Field experiment** (5)
 
-- [Agarwal & Sen (ISB / CMU), randomised field experiment on AI Overviews, SSRN 6513059 (rev. 8 Jul 2026)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6513059) — N = 1,065 · US · Google · Jan–Feb 2026 · not peer reviewed. *In the talk:* We see the edges.
-- [Wang, Gleason, Bart, Wilson, Metaxa, preregistered experiment on AI search and clicks, arXiv:2608.18352 (18 Aug 2026)](https://arxiv.org/abs/2608.18352) — N = 1,100 · US · Google. *In the talk:* We see the edges.
+- [Agarwal & Sen (ISB / CMU), randomised field experiment on AI Overviews, SSRN 6513059 (rev. 8 Jul 2026)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6513059) — N = 1,065 · US · Google · Jan–Feb 2026 · not peer reviewed. *In the talk:* We see the result.
+- [Wang, Gleason, Bart, Wilson, Metaxa, preregistered experiment on AI search and clicks, arXiv:2608.18352 (18 Aug 2026)](https://arxiv.org/abs/2608.18352) — N = 1,100 · US · Google. *In the talk:* We see the result.
 - [Ahrefs (Linehan, Guan), schema and AI citations, matched difference-in-differences (11 May 2026)](https://ahrefs.com/blog/schema-ai-citations/) — 1,885 pages × 3 controls · AI Overviews, AI Mode, ChatGPT. *In the talk:* Verdict (B).
 - [SearchPilot × Omio, controlled page-group tests (31 Jul and 14 Aug 2026)](https://www.searchpilot.com/resources/blog/is-geo-working-how-to-get-beyond-prompt-tracking) — Travel site · LLM traffic and Google organic · method not fully published. *In the talk:* Be explicit · Test it like CRO.
 - [Watanabe & Nakayashiki, interrupted time series on one consumer site, arXiv:2606.04362 (3 Jun 2026)](https://arxiv.org/abs/2606.04362) — One site · ChatGPT referrals · placebo test p = 0.16. *In the talk:* Test it like CRO.
 
 **R2 · Large observational study** (7)
 
-- [Pew Research Center, Google users are less likely to click on links when an AI summary appears (22 Jul 2025)](https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/) — 900 US adults · Mar 2025. *In the talk:* We see the edges.
+- [Pew Research Center, Google users are less likely to click on links when an AI summary appears (22 Jul 2025)](https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/) — 900 US adults · Mar 2025. *In the talk:* We see the result.
 - [Xu, Iqbal, Montgomery (WashU), measuring Google AI Overviews, arXiv:2605.14021 (13 May 2026)](https://arxiv.org/html/2605.14021v1) — 55,393 queries · 98,020 claims · Mar–Apr 2026. *In the talk:* Be explicit.
 - [Schulte, Bleeker, Kaufmann (University of St. Gallen), visibility in AI search, arXiv:2604.07585 (Apr 2026)](https://arxiv.org/abs/2604.07585) — 4 engines · German-language prompts from Swiss servers · Jan–Mar 2026 + same-day repeats. *In the talk:* One number hides what moved.
-- [Amani et al. (MPI-SWS), donated conversations, arXiv:2609.19244 (16 Sep 2026)](https://arxiv.org/abs/2609.19244) — Real donated chats · ChatGPT, Claude, Grok, DeepSeek. *In the talk:* One question. Many queries..
+- [Amani et al. (MPI-SWS), donated conversations, arXiv:2609.19244 (16 Sep 2026)](https://arxiv.org/abs/2609.19244) — Real donated chats · ChatGPT, Claude, Grok, DeepSeek. *In the talk:* Many results, one answer.
 - [Malthouse, Lee, Yang, Pal, Feng, brand recommendations as retrieval and ranking, arXiv:2609.16304 (14 Sep 2026)](https://arxiv.org/abs/2609.16304) — 2,400 lists · 6 models · 5 consumer categories · exploratory. *In the talk:* Off-site mentions.
 - [Forrester, State of Business Buying 2026 (21 Jan 2026)](https://www.forrester.com/blogs/state-of-business-buying-2026) — ~18,000 buyers worldwide. *In the talk:* The buyer sees AI.
 - [ARD/ZDF-Medienstudie 2026 (22 Sep 2026), via t3n](https://t3n.de/news/ard-zdf-medienstudie-2026-ki-nutzung-1765059/) — 2,462 people in Germany aged 14+ · Jan–Apr 2026. *In the talk:* The buyer sees AI.
@@ -481,7 +494,7 @@ Also available as [sources.csv](sources.csv).
 - [Google Search Central: AI features and your website; AI optimization guide (Jul 2026)](https://developers.google.com/search/docs/appearance/ai-features) — Platform documentation. *In the talk:* One question. Many queries. · Verdict (C) · Be retrievable.
 - [Google Search Console Help: generative AI report and control (worldwide 31 Aug 2026)](https://support.google.com/webmasters/answer/16984139) — Platform documentation. *In the talk:* What you can see today.
 - [OpenAI: crawler documentation and ChatGPT search help](https://developers.openai.com/api/docs/bots) — Platform documentation. *In the talk:* Be retrievable · Title and a passage.
-- [Anthropic: crawler documentation and web tools](https://support.claude.com/en/articles/8896518) — Platform documentation. *In the talk:* Be retrievable.
+- [Anthropic: crawler documentation and web tools](https://support.claude.com/en/articles/8896518) — Platform documentation. *In the talk:* Many results, one answer · Be retrievable.
 - [Microsoft Bing Webmaster Tools: AI Performance (Feb and Jun 2026)](https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview) — Platform documentation. *In the talk:* What you can see today.
 - [Google I/O 2026 keynote (19 May 2026)](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) — Company-reported user counts. *In the talk:* The buyer sees AI.
 - [OpenAI, weekly users (Aug 2026)](https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/) — Company-reported user counts. *In the talk:* The buyer sees AI.
@@ -491,9 +504,9 @@ Also available as [sources.csv](sources.csv).
 
 - [Conductor, 2026 AEO/GEO Benchmarks (Nov 2025)](https://www.conductor.com/academy/aeo-geo-benchmarks-report/) — 13,770 domains · 3.3 bn sessions · May–Sep 2025. *In the talk:* The buyer sees AI · Who gets the credit?.
 - [Similarweb, the downstream impact of AI visibility (Jun 2026)](https://www.similarweb.com/corp/the-downstream-impact-of-ai-visibility/) — 6 consumer brands · ChatGPT · US desktop · Jul–Dec 2025 · full report gated. *In the talk:* Who gets the credit?.
-- [Żatuchin, variance decomposition of AI answers, arXiv:2607.13304 (14 Jul 2026)](https://arxiv.org/html/2607.13304) — 12,933 multilingual responses · 3 models · author works for a vendor. *In the talk:* Most tools don’t publish how they count.
-- [Petra Labs, how accurate are AI visibility tools (2026)](https://www.petralabs.com/intelligence/how-accurate-are-ai-visibility-tools) — 900 trials · ChatGPT signed in, signed out and API. *In the talk:* Most tools don’t publish how they count.
-- [Ahrefs (Linehan, Guan), 75,000-brand correlations with AI visibility (2025–2026)](https://ahrefs.com/blog/ai-brand-visibility-correlations) — 75,000 brands · Google AI Overviews · correlational. *In the talk:* Verdict (E) · Off-site mentions.
+- [Żatuchin, variance decomposition of AI answers, arXiv:2607.13304 (14 Jul 2026)](https://arxiv.org/html/2607.13304) — 12,933 multilingual responses · 3 models · author works for a vendor. *In the talk:* Most tools don’t publish their formula.
+- [Petra Labs, how accurate are AI visibility tools (2026)](https://www.petralabs.com/intelligence/how-accurate-are-ai-visibility-tools) — 900 trials · ChatGPT signed in, signed out and API. *In the talk:* Most tools don’t publish their formula.
+- [Ahrefs (Linehan, Guan), 75,000-brand correlations with AI visibility (2025–2026)](https://ahrefs.com/blog/ai-brand-visibility-correlations) — 75,000 brands · ChatGPT, AI Mode, AI Overviews · correlational. *In the talk:* Verdict (E) · Off-site mentions.
 - [Discovered Labs, what drives AI citations (Aug 2026)](https://discoveredlabs.com/research/what-drives-ai-citations) — 2 M citations · 10,000 pages · 4 engines · agency dataset. *In the talk:* Be explicit.
 - [G2 / Kevin Indig, do more G2 reviews mean more AI visibility? (23 Oct 2025)](https://learn.g2.com/do-more-g2-reviews-mean-more-ai-visibility) — 30,000 citations · 500 categories · published by G2. *In the talk:* Off-site mentions.
 - [DerivateX, ChatGPT cites recommended SaaS tools’ own sites (1 Jun 2026), press release](https://natlawreview.com/press-releases/study-chatgpt-cites-recommended-saas-tools-own-site-just-12-time) — 40 B2B SaaS categories × 10 runs · ChatGPT. *In the talk:* Your site is one voice.
@@ -502,12 +515,12 @@ Also available as [sources.csv](sources.csv).
 - [Kevin Indig (Growth Memo), how AI pays attention (16 Feb 2026)](https://www.growth-memo.com/p/the-science-of-how-ai-pays-attention) — 18,012 ChatGPT citations · detail behind a paywall. *In the talk:* Be retrievable.
 - [Temso, Lost in Translation: how AI models handle local-language sources (early 2026)](https://www.temso.ai/data/-Lost-in-Translation-How-AI-Models-Handle-Local-Language-Sources) — 7,058,891 citations · 6 languages · 4 models · vendor study. *In the talk:* German prompts.
 - [Ahrefs llms.txt server logs, via PPC Land (2 Jul 2026)](https://ppc.land/llms-txt-adoption-rises-8-8x-but-97-of-files-get-zero-ai-requests/) — 137,000 domains · May 2026. *In the talk:* Verdict (C).
-- [Averi / Writesonic, brand-site citations across ChatGPT model versions (May 2026)](https://www.averi.ai/blog/gpt-5.5-cites-brand-sites-10pp-less-than-gpt-5.4) — 50 prompts × 3 models · small vendor sample. *In the talk:* Most tools don’t publish how they count.
+- [Averi / Writesonic, brand-site citations across ChatGPT model versions (May 2026)](https://www.averi.ai/blog/gpt-5.5-cites-brand-sites-10pp-less-than-gpt-5.4) — 50 prompts × 3 models · small vendor sample. *In the talk:* Most tools don’t publish their formula.
 - [6sense, 2025 B2B Buyer Experience Report (Nov 2025)](https://6sense.com/science-of-b2b/buyer-experience-report-2025/) — ~4,000 buyers · 40% in Europe. *In the talk:* The buyer sees AI.
 - [Tannenbaum (Aiso), own-domain retrieval and brand mentions, arXiv:2609.23162 (19 Sep 2026)](https://arxiv.org/abs/2609.23162) — 34,960 observations · 75 projects · GPT and Gemini · observational · vendor author. *In the talk:* Be retrievable.
 - [Qwairy, Otterly and Petra Labs: ChatGPT’s Reddit citations in August 2026](https://www.qwairy.co/blog/chatgpt-reddit-citations-collapse-august-2026) — Three vendor trackers · mid-August 2026 · link is Qwairy’s; Petra Labs via Inc., Otterly via its own report. *In the talk:* Off-site mentions.
 - [Profound, The AI mention effect (1 Jul 2026)](https://www.tryprofound.com/blog/the-ai-mention-effect) — US panel · Jan–Jun 2026. *In the talk:* What you can see today · Who gets the credit?.
-- [RESONEO, inside ChatGPT retrieval (Jul, updated Aug 2026)](https://think.resoneo.com/chatgpt-retrieval/) — 1,249 answers · 88,000 results · 26,900 pages · ChatGPT. *In the talk:* Title and a passage.
+- [RESONEO, inside ChatGPT retrieval (Jul, updated Aug 2026)](https://think.resoneo.com/chatgpt-retrieval/) — 1,249 answers · 88,000 results · 26,900 pages · ChatGPT. *In the talk:* Many results, one answer · Title and a passage.
 - [DEJAN, how big are Google’s grounding chunks? (Dec 2025)](https://dejan.ai/blog/how-big-are-googles-grounding-chunks/) — 7,060 queries · Gemini grounding API. *In the talk:* Title and a passage.
 - [Wix AI Search Lab with Peec AI data, content types most cited by LLMs (Mar 2026)](https://www.wix.com/studio/ai-search-lab/research/content-types-most-cited-by-llms) — 75,000 answers · 1.06 M citations · ChatGPT, AI Mode, Perplexity. *In the talk:* Your site is one voice.
 - [Ahrefs, ChatGPT has 12% of Google’s search volume but Google sends 190× more traffic (Feb 2026)](https://ahrefs.com/blog/chatgpt-has-12-percent-of-googles-search-volume/) — ~76,000 sites in one vendor’s analytics cohort. *In the talk:* Test it like CRO.
@@ -524,13 +537,13 @@ Also available as [sources.csv](sources.csv).
 
 - [Puerto, Gubri, Green, Oh, Yun, C-SEO Bench, NeurIPS 2025, arXiv:2506.11097](https://arxiv.org/abs/2506.11097) — 1,915 queries · 16,325 documents · 6 domains · 4 models. *In the talk:* Verdict (A).
 - [Kim et al., SAGEO Arena, KDD 2026, arXiv:2602.12187](https://arxiv.org/abs/2602.12187) — 171,003 web documents · 2,700 queries · simulated three-stage pipeline. *In the talk:* Verdict (D).
-- [Aggarwal et al., GEO: Generative Engine Optimization, KDD 2024, arXiv:2311.09735](https://arxiv.org/abs/2311.09735) — Simulated engine · top-5 Google results · GPT-3.5. *In the talk:* The famous +40%.
-- [Martinez, critical survey of 45 GEO studies (2023–2026), arXiv:2607.14035 (15 Jul 2026)](https://arxiv.org/html/2607.14035v1) — Literature review. *In the talk:* Every number has a rung.
+- [Aggarwal et al., GEO: Generative Engine Optimization, KDD 2024, arXiv:2311.09735](https://arxiv.org/abs/2311.09735) — Simulated engine · top-5 Google results · GPT-3.5 · Perplexity check via uploaded files. *In the talk:* The famous +40%.
+- [Martinez, critical survey of 45 GEO studies (2023–2026), arXiv:2607.14035 (15 Jul 2026)](https://arxiv.org/html/2607.14035v1) — Literature review · preprint. *In the talk:* Every number has a rung · Many results, one answer.
 
 **My own work** (not counted in the 152)
 
 - My audit: Sarah’s buyer questions on ChatGPT and Google AI Mode (23 Sep 2026) — 1 category · 1 brand · 10 questions × DE/EN · 62 answers · signed-in sessions · exploratory, not a trend. *In the talk:* German prompts · Be explicit · Be present · One number hides what moved.
-- My review of 20 AI-visibility tools’ public documentation (21 Sep 2026) — 20 products · public help pages, docs and methodology pages. *In the talk:* Most tools don’t publish how they count.
+- My review of 20 AI-visibility tools’ public documentation (21 Sep 2026) — 20 products · public help pages, docs and methodology pages. *In the talk:* Most tools don’t publish their formula.
 
 ---
 
@@ -543,6 +556,16 @@ Also available as [sources.csv](sources.csv).
 - Nothing in this pack is a product recommendation, and it isn't investment advice.
 
 **Corrections.** Found an error, a newer version of a study, or a source that contradicts one here? Please open an issue in this repository. Corrections will be dated.
+
+**Changes on 29 September 2026** (to match the final talk; no source added or removed, still 51):
+
+- Slide titles updated: "Sarah's evaluation starts inside AI", "She never clicked the AI answer", "We see the result, not the decision", "Strongest support? D, narrowly, and only in the lab", "In default ChatGPT answers…", "Most tools don't publish their formula".
+- "Visibility" now has five meanings: **Mentioned** was added.
+- New Act 2 section: "Many results. A few passages. One answer."
+- The bet (Act 3) now says what kind of test each move had.
+- Tannenbaum: "3–4%" corrected to "under 4%" (2.8% and 3.8%). Wang et al.: US, March 2026 added.
+- Ahrefs' 75,000-brand study covers ChatGPT, AI Mode and AI Overviews; "3×" wording removed.
+- GA4 and the Monday fixes: ChatGPT's `utm_source=chatgpt.com` tag.
 
 **How to cite.** Andrusenko, A. (2026). *The Invisible Funnel: evidence pack.* SaaS Marketers Connect, Berlin, 30 September 2026. Cite the original studies for their findings.
 

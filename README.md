@@ -3,9 +3,9 @@
 **What actually works in AI visibility, and what the evidence says doesn't.**
 Companion to the talk by Anton Andrusenko at SaaS Marketers Connect, DeepL, Berlin, 30 September 2026.
 
-**Download:** [Full pack (PDF)](The-Invisible-Funnel-evidence-pack.pdf) · [Six-questions checklist (PDF, 2 pages)](Six-questions-checklist.pdf) · [All sources (CSV)](sources.csv)
+**Download:** [Slides as presented (PDF, 41 slides)](The-Invisible-Funnel-slides.pdf) · [Full pack (PDF)](The-Invisible-Funnel-evidence-pack.pdf) · [Six-questions checklist (PDF, 2 pages)](Six-questions-checklist.pdf) · [All sources (CSV)](sources.csv)
 
-Every number from the talk is here, with where it came from, how strong it is and what it doesn't show. The research cut-off was 21 September 2026, and the figures were checked against their sources by 23 September. Changes after the cut-off were checked on 25 September (section 5). This version was updated on 29 September 2026 to match the final talk; the changes are listed in section 8. I didn't author the studies cited: I collected them, checked them against their sources and graded them. The one exception is a small audit I ran myself, clearly marked as mine.
+Every number from the talk is here, with where it came from, how strong it is and what it doesn't show. The research cut-off was 21 September 2026, and the figures were checked against their sources by 23 September. Changes after the cut-off were checked on 25 September (section 5). This version was updated on 29 September 2026 to match the final talk, and on 1 October 2026 to add the slides and a list of corrections to them; both are in section 8. I didn't author the studies cited: I collected them, checked them against their sources and graded them. The one exception is a small audit I ran myself, clearly marked as mine.
 
 **Contents**
 
@@ -456,7 +456,7 @@ None of these changes a number in the talk. Most platform figures in it were mea
 - **"AEO multiplied ChatGPT referrals ×1.8."** One site, and the placebo test failed.
 - **"Randomness is the smallest reason tools disagree."** Magnitudes from different studies, in different units, can't be ranked.
 - **"X billion AI users."** Company counts in different units can't be added up.
-- **"ChatGPT just uses Bing" (or Google).** It runs its own index and also mixes in scraped results; nobody has published the mix.
+- **"ChatGPT just uses Bing" (or Google).** Bing is one documented partner: OpenAI says ChatGPT sends rewritten queries to its search partners ([help](https://help.openai.com/en/articles/9237897-chatgpt-search); the [Enterprise and Edu page](https://help.openai.com/en/articles/10093903-chatgpt-search-for-enterprise-and-edu) names Bing), and it runs its own search crawler, OAI-SearchBot. OpenAI doesn't publish the mix.
 - **"Write listicles."** Page-type rankings shift when models update.
 - **"GEO tactics boost AI citations by 40%."** The +40% was a share of words in a lab, for pages already found.
 - **"Sitemaps do nothing."** The test concerned crawl discovery on one domain.
@@ -566,6 +566,22 @@ Also available as [sources.csv](sources.csv).
 - Tannenbaum: "3–4%" corrected to "under 4%" (2.8% and 3.8%). Wang et al.: US, March 2026 added.
 - Ahrefs' 75,000-brand study covers ChatGPT, AI Mode and AI Overviews; "3×" wording removed.
 - GA4 and the Monday fixes: ChatGPT's `utm_source=chatgpt.com` tag.
+
+**Changes on 1 October 2026** (no source added or removed, still 51):
+
+- Added the [slides as presented](The-Invisible-Funnel-slides.pdf) on 30 September: the 41 slides the audience saw. Hidden slides and Q&A backups are left out; their content is in this pack.
+- Corrected the myth "ChatGPT just uses Bing" (section 6): it said ChatGPT "runs its own index and mixes in scraped results". OpenAI's documentation doesn't say that. It names search partners, Bing among them, and its own crawler.
+
+**Corrections to the slides.** The slides are published as presented. Where a slide says more than the evidence, or says it imprecisely, the accurate version is below. Slide numbers refer to the PDF.
+
+- **Slide 1:** the footer says "her questions are real". Sarah is a composite; her questions are the ones I asked AI in my audit, not prompts from real buyers.
+- **Slides 2–3:** "She never clicked" should read "She never clicked the AI answer". Her later Google search was a click.
+- **Slide 19:** the +40% is the result for adding quotations (position-adjusted word count 19.3 → 27.2); adding statistics gave about +31%. In the broader benchmark (C-SEO Bench), quotations showed no significant effect and statistics lowered rankings in 19 of 24 settings.
+- **Slide 22:** "If the hacks don't survive end to end" should read "If no hack holds up across sites and platforms".
+- **Slide 26:** "In most AI answers" should read "In default ChatGPT answers". It's one ChatGPT capture, in default mode.
+- **Slide 27:** "Be explicit — or AI borrows someone else's numbers" is one audit, not a rule. Accurate version: in my audit, where the page was silent, AI borrowed someone else's numbers.
+- **Slide 33:** the label should read "R4 + R5 · observational, not causal". The declared-leads figure comes from one firm (R5), and none of these numbers is a correlation.
+- **Slide 36:** "of 20 AI-visibility vendors" should read "products". Two of the 20 are Semrush's, my employer's.
 
 **How to cite.** Andrusenko, A. (2026). *The Invisible Funnel: evidence pack.* SaaS Marketers Connect, Berlin, 30 September 2026. Cite the original studies for their findings.
 
